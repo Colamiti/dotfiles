@@ -1,0 +1,9 @@
+[user]
+	name = Colamiti
+	email = 58100701+Colamiti@users.noreply.github.com
+[init]
+	defaultBrach = main
+[color]
+	ui = auto
+[pull]
+	rebase = false
