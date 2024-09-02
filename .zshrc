@@ -75,10 +75,10 @@ ZSH_TMUX_AUTOSTART=true
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git tmux zsh-syntax-highlighting)
+plugins=(git tmux)
 
 source $ZSH/oh-my-zsh.sh
-
+source /home/colin/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 # User configuration
 # export MANPATH="/usr/local/man:$MANPATH"
 
@@ -105,3 +105,26 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias ..="cd .."
 alias python=/usr/bin/python3
+#this is used to make the jupyter extension work on archlinux
+alias code='code --enable-proposed-api ms-toolsai.jupyter'
+
+alias dts='source ~/dts'
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/home/colin/miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/home/colin/miniconda4/etc/profile.d/conda.sh" ]; then
+        . "/home/colin/miniconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="/home/colin/miniconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
+
+
+export PATH="$PATH:~/azuredatastudio-linux-x64"
+export PATH="$PATH:~/azuredatastudio-linux-x64"
+export PATH="$PATH:~/azuredatastudio-linux-x64"
